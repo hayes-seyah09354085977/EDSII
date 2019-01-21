@@ -12,6 +12,7 @@
         
         <!-- CSS INCLUDE -->        
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <link rel="stylesheet" href="{{asset('js/plugins/APPWINDOW/appwindow.css')}}">
         <!-- EOF CSS INCLUDE -->                                    
     </head>
     <body>
@@ -25,8 +26,9 @@
                 
                 <!-- START X-NAVIGATION VERTICAL -->
                 @include('header.head')
-                <!-- END X-NAVIGATION VERTICAL -->                     
-
+                <!-- END X-NAVIGATION VERTICAL -->    
+                
+              
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>                    
@@ -36,7 +38,13 @@
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                 
+                
+                    {{-- start of appwindow content --}}
+                    <div class='app-content'>
+
+                    </div>
+                    {{-- end of appwindow content --}}
+
                 </div>
                 <!-- END PAGE CONTENT WRAPPER -->                                
             </div>            
@@ -73,7 +81,8 @@
         <!-- START PLUGINS -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script> 
+        <script src="{{ asset('js/plugins/APPWINDOW/appwindow.js') }}" async></script>   
         <!-- END PLUGINS -->
 
         <!-- START THIS PAGE PLUGINS-->        
