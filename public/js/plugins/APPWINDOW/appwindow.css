@@ -72,14 +72,14 @@
 /* Style the input field */
 
 label {
-    width: 100%;
+    width: 100px;
     border-radius: 3px;
     border: none;
     /* background-color: white; */
     margin-top: -8px;
     height: 25px;
-    color: #666;
     padding: 5px;
+    color: #677;
 }
 
 
@@ -116,14 +116,19 @@ label {
     z-index: 4;
     width: 100%;
     position: absolute;
-    height: 24px;
+    height: 37px;
     bottom: 0px;
+}
+
+label.taskbar-name-default {
+    margin-top: 3px;
+    color: #FFF !important;
 }
 
 .appbarInfo {
     display: inline-block;
     width: 100px;
-    height: 23px;
+    height: 34px;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -131,6 +136,19 @@ label {
     background: #ffffff;
 }
 
-.active {
-    background: #1caf9a !important;
+
+/* active forms and taskbar */
+
+.form-active {
+    background: #428bca !important;
+    color: #FFF !important;
+}
+
+.form-inactive {
+    background: #FFF !important;
+    color: #667 !important;
+}
+
+.taskbar-inactive {
+    color: #667 !important;
 }

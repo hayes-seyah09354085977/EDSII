@@ -43,6 +43,10 @@
                     <div class='app-content'>
 
                     </div>
+                    
+                    <div class="taskbar embed-responsive-item"> 
+                
+                    </div>
                     {{-- end of appwindow content --}}
 
                 </div>
