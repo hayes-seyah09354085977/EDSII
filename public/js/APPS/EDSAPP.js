@@ -148,52 +148,371 @@ var edsapps = {
                 </div>
             </div> 
         </div>
-        
     </div> `,
 
     PRODUCTDATABASE: `
-    <label>PRODUCT NO</label><input type'text' id='PRODUCTNO' class='PRIMARY'>
-    <label>PRODUCT DESCRIPTION</label><input type'text' id='PRODUCTDESCRIPTION'>
-    <label>I/VAL</label><input type'text' id='IVAL'>
-    <label>P/VAL</label><input type'text' id='PVAL'>
-    <label>CRF/VAL</label><input type'text' id='CRFVAL'>
-    <label>UNIT</label><input type'text' id='UNIT'>
-    <label>COUNTRY</label><input type'text' id='COUNTRY'>
-    <label>CURRENCY</label><input type'text' id='CURRENCY'>
-
-
-    <label>I/CODE</label><input type'text' id='ICODE'>
-    <label>H.S. CODE</label><input type'text' id='HSCODE'>
-    <label>DUTY(%)</label><input type'text' id='DUTY'>`,
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">PRODUCT NO:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="PRODUCTNO">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">PRODUCT DESCRIPTION:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="PRODUCTDESCRIPTION">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">I/VAL:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="IVAL">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">P/VAL:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="PVAL">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">CRF/VAL.:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="CRFVAL">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">UNIT:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="UNIT">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">COUNTRY:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="COUNTRY">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">CURRENCY:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="CURRENCY">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">I/CODE:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="ICODE">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">H.S. CODE:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="HSCODE">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">DUTY(%):</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="DUTY">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`,
 
     IMPORTERDATABASE: `
-    <label>REF NO</label><input type'text' id='REFNO' class='PRIMARY'>
-    <label>I/CODE</label><input type'text' id='ICODE'>
-    <label>I/NAME</label><input type'text' id='INAME'>
-    <label>ADDRESS</label><input type'text' id='ADDRESS'>
-    <label>SIGNATORY</label><input type'text' id='SIGNATORY'>
-    <label>CIIS NO.</label><input type'text' id='CIISNO'>
-    <label>IPF A/C</label><input type'text' id='IPFAC'>
-    <label>CBW</label><input type'text' id='CBW'>`,
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">REF NO:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="REFNO">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">I/CODE:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="ICODE">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">I/NAME:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="INAME">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">ADDRESS:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="ADDRESS">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">SIGNATORY:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="SIGNATORY">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">CIIS NO.:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="CIISNO">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">IPF A/C:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="IPFAC">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">CBW:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="CBW">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`,
 
     SUPPLIERDATABASE: `
-    <label>S/CODE</label><input type'text' id='SCODE' class='PRIMARY'>
-    <label>S/NAME</label><input type'text' id='SNAME'>
-    <label>ADDRESS</label><input type'text' id='ADDRESS'>
-    `,
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">S/CODE:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="SCODE">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">S/NAME:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="SNAME">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">I/NAME:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="INAME">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">ADDRESS:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="ADDRESS">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`,
+
     USDEXCHANGERATE: `
-    <label>REF NO.</label><input type'text' id='REFNO' class='PRIMARY'>
-    <label>DATE</label><input type'text' id='DATE'>
-    <label>CURRENCY</label><input type'text' id='CURRENCY'>
-    <label>USD EQUIVALENT</label><input type'text' id='USDEQUIVALENT'>
-    <label>PHP EQUIVALENT</label><input type'text' id='PHPEQUIVALENT'>
-    `,
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">REF NO.:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="REFNO.">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">DATE:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="DATE">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">CURRENCY:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="CURRENCY">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">USD EQUIVALENT:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="USDEQUIVALENT">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">PHP EQUIVALENT:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="PHPEQUIVALENT">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`,
+
     ATTACHMENTDOCUMENTCODE: `
-    <label>A.D. CODE</label><input type'text' id='ADCODE' class='PRIMARY'>
-    <label>A.D. DESCRIPTION</label><input type'text' id='ADDESCRIPTION'>
-    `,
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">A.D. CODE:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="ADCODE.">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">A.D. DESCRIPTION:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="ADDESCRIPTION">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`,
+
     TARIFFRATES: `
-    <label>H.S CODE</label><input type'text' id='HSCODE' class='PRIMARY'>
-    <label>DESCRIPTION</label><input type'text' id='DESCRIPTION'>
-    `
+    <div class="column">
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">H.S CODE:</label>
+                    <div class="col-lg-7">
+                        <input type="text" class="form-control primary"  id="HSCODE.">
+                    </div>
+                    <div class="col-lg-1">
+                        <span class= "glyphicon glyphicon-search lookup"></span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row top-buffer">
+            <div class="frm ">
+                <div class="form-group">
+                    <label for="name" class="col-lg-4">DESCRIPTION:</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control shorttext"  id="HSDESCRIPTION">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>`
 }
