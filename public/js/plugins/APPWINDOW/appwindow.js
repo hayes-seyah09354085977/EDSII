@@ -2,7 +2,7 @@ var activeapp = ''
 var windowapp = {
     open: function(id, appname, content) {
         var appwindow = `
-        <div id="` + id + `" class="appcontainer">
+        <div id="` + id + `" class="appcontainer ">
    
         <div class="header">
             <div class="column left">

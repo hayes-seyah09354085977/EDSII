@@ -33,6 +33,7 @@
 
 .column {
     float: left;
+    width: 50%;
 }
 
 .left {
@@ -153,3 +154,15 @@ label.taskbar-name-default {
 .taskbar-inactive {
     color: #667 !important;
 }
+
+/*field css*/
+
+input.primary {
+    width: 120px;
+}
+span.lookup {
+    font-size: 20px;
+    margin-left: -19px;
+    margin-top: 3px;
+}
+.top-buffer { margin-top:4px; }
