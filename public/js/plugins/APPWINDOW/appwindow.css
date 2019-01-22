@@ -122,7 +122,7 @@ label {
 
 label.taskbar-name-default {
     margin-top: 3px;
-    color: #FFF !important;
+    color: #FFF;
 }
 
 .appbarInfo {
@@ -141,7 +141,7 @@ label.taskbar-name-default {
 
 .form-active {
     background: #428bca !important;
-    color: #FFF !important;
+    color: #FFF;
 }
 
 .form-inactive {

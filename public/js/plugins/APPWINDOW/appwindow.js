@@ -74,9 +74,11 @@ var windowapp = {
         windowapp.taskbar(id)
     },
     taskbar: function(id, appname, response) {
-        $('.taskbar').find('.appbarInfo').removeClass('form-active')
-            // $('.taskbar-name-default').addClass('taskbar-inactive')
-        $('.taskbar').find('.appbarInfo').addClass('form-inactive')
+        var taskbarname = $('.taskbar #' + id),
+            taskbar = $('.taskbar')
+        taskbar.find('.appbarInfo').removeClass('form-active')
+        $('.taskbar-name-default').addClass('taskbar-inactive')
+        taskbar.find('.appbarInfo').addClass('form-inactive')
 
         switch (response) {
             case 'newapp':
@@ -84,13 +86,13 @@ var windowapp = {
                 <div id="` + id + `" class="appbarInfo form-active">
                 <label class='taskbar-name-default'>` + appname + ` </label>
                 </div>`
-                $('.taskbar').append(apptaskbar)
+                taskbar.append(apptaskbar)
                 break;
 
             default:
-                // $('.taskbar').find('#' + id).removeClass('form-inactive')
-                $('.taskbar').find('#' + id).removeClass('form-inactive')
-                $('.taskbar').find('#' + id).addClass('form-active')
+                taskbarname.find('.taskbar-name-default').removeClass('taskbar-inactive')
+                taskbarname.removeClass('form-inactive')
+                taskbarname.addClass('form-active')
 
         }
     }
@@ -98,3 +100,4 @@ var windowapp = {
 
 
 windowapp.open('PROBOOK', 'Pro Book')
+windowapp.open('TEST2', 'Test2')
