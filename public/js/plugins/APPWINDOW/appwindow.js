@@ -1,7 +1,6 @@
 var activeapp = ''
 var windowapp = {
-    open: function(id, appname) {
-        console.log('open')
+    open: function(id, appname, content) {
         var appwindow = `
         <div id="` + id + `" class="appcontainer">
    
@@ -24,15 +23,7 @@ var windowapp = {
         </div>
 
         <div class="content">
-           <label>Ref. No</label><input type'text' id='REFNO' class='shorttext'><br>
-           <label>Importer</label><input type'text' id='IMPORTER'><br>
-           <label>Address</label><input type'text' id='ADDRESS'><br>
-           <label>CIIS No</label><input type'text' id='CIISNO'><br>
-           <label>Port/Org</label><input type'text' id='PORTORG'><br>
-           <label>Reg. No</label><input type'text' id='REGNO'><br>
-           <label>BL/AWB</label><input type'text' id='BLAWB'><br>
-           <label>A/Bank</label><input type'text' id='ABANK'><br>
-           <label>PMode/LC</label><input type'text' id='PMODE'><br>
+           ` + content + `
         </div>
     </div>`
         activeapp = id
@@ -98,6 +89,14 @@ var windowapp = {
     }
 }
 
+$('li.applist').click(function() {
+    var appid = $(this).attr('id'),
+        appname = $('#' + appid).text(),
+        appcontent = edsapps[appid.split('_')[0]]
 
-windowapp.open('PROBOOK', 'Pro Book')
-windowapp.open('TEST2', 'Test2')
+    console.log(appid)
+    windowapp.open(appid.split('_')[0], appname, appcontent)
+})
+
+// windowapp.open('PROBOOK', 'Pro Book')
+// windowapp.open('TEST2', 'Test2')

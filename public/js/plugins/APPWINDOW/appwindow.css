@@ -116,8 +116,9 @@ label {
     z-index: 4;
     width: 100%;
     position: absolute;
-    height: 37px;
+    height: 38px;
     bottom: 0px;
+    margin-left: 10px;
 }
 
 label.taskbar-name-default {

@@ -43,7 +43,7 @@
                     <div class='app-content'>
 
                     </div>
-                    
+
                     <div class="taskbar embed-responsive-item"> 
                 
                     </div>
@@ -86,7 +86,9 @@
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script> 
-        <script src="{{ asset('js/plugins/APPWINDOW/appwindow.js') }}" async></script>   
+        <script src="{{ asset('js/APPS/EDSAPP.js') }}"></script> 
+        <script src="{{ asset('js/plugins/APPWINDOW/appwindow.js') }}" async></script>
+        
         <!-- END PLUGINS -->
 
         <!-- START THIS PAGE PLUGINS-->        
