@@ -1,4 +1,6 @@
 var edsapps = {
+    PERSONAL1:``,
+
     PROBOOK: `
     <div class="column">
         <div class="row top-buffer">
@@ -514,5 +516,7 @@ var edsapps = {
                 </div>
             </div> 
         </div>
-    </div>`
+    </div>`,
+
+
 }

@@ -1,5 +1,9 @@
 $(document).ready(function(){        
-    
+    $("#PERSONAL").hover(function() {
+        $(this).css('cursor','pointer');
+    }, function() {
+        $(this).css('cursor','auto');
+    });
     /* PROGGRESS START */
     $.mpb("show",{value: [0,50],speed: 5});        
     /* END PROGGRESS START */

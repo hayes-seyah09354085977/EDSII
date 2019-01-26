@@ -115,6 +115,16 @@ $('li.applist').click(function() {
         appname = $('#' + appid).text(),
         appcontent = edsapps[appid.split('_')[0]]
 
-    console.log(appid)
+    console.log(appid.split('_')[0], appname)
     windowapp.open(appid.split('_')[0], appname, appcontent)
 })
+//WAG BURAHIN TEMPORARY LANG TO
+$('#PERSONAL').click(function() {
+    appcontent = edsapps['PERSONAL1']
+    windowapp.open('PERSONA', 'Personal Information',appcontent)
+    $.post('posts',(data)=>{
+        console.log(data)
+    })
+})
+
+

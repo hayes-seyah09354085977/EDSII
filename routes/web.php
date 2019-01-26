@@ -19,6 +19,10 @@ Route::get('/', function () {
 //     return view('admin');
 // });
 
+Route::resource('posts', 'PostControler');
+
 Auth::routes();
 
+Route::get('ajax', function(){ return view('ajax'); });
+Route::post('/postajax','AjaxController@post');
 Route::get('admin', 'HomeController@index');
