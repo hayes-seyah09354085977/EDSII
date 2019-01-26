@@ -3,7 +3,7 @@
     <!-- START X-NAVIGATION -->
     <ul class="x-navigation">
         <li class="xn-logo">
-            <a href="index.html">Joli Admin</a>
+            <a href="index.html">{{ config('app.name', 'EDS') }}</a>
             <a href="#" class="x-navigation-control"></a>
         </li>
         <li class="xn-profile">
@@ -15,8 +15,8 @@
                     <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
                 </div>
                 <div class="profile-data">
-                    <div class="profile-data-name">John Doe</div>
-                    <div class="profile-data-title">Web Developer/Designer</div>
+                    <div class="profile-data-name">{{ Auth::user()->name }}</div>
+                    <div class="profile-data-title">{{ Auth::user()->designation }}</div>
                 </div>
                 <div class="profile-controls">
                     <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
