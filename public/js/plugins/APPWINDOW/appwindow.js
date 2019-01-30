@@ -10,9 +10,9 @@ var windowapp = {
    
         <div class="header">
             <div class="column left">
-            <span id="close" class="dot" style="background:#ED594A;"></span>
+            <span id="` + id + `_exit" class="dot exit" style="background:#ED594A;"></span>
             <span class="dot" style="background:#FDD800;"></span>
-            <span id="minimize" class="dot" style="background:#5AC05A;"></span>
+            <span id="` + id + `_min" class="dot minimize" style="background:#5AC05A;"></span>
             </div>
             <div class="column middle">
             ` + appname + `
@@ -41,26 +41,48 @@ var windowapp = {
                 handle: '.header'
             });
 
+            var minimize = activeapp.appid + '_min'
+            $('.exit,.taskbar-name-default,#' + minimize).click(function() {
+                console.log($(this))
+                var dialogID = $(this).attr('class').split(' '),
+                    winID = '',
+                    taskbar = '';
+                if (dialogID[0] != 'taskbar-name-default') {
+                    winID = $(this).attr('id').split('_')
+                    switch (dialogID[1]) {
+                        case 'minimize':
+                            console.log('min clicked')
+                            $("#" + winID).animate({
+                                width: ["toggle", "swing"],
+                                height: ["toggle", "swing"],
+                                opacity: "toggle"
+                            });
+                            break;
+                        case 'exit':
+                            windowapp.close(winID[0])
+                            $('.taskbar').find('#' + winID[0] + '_bar').remove()
+                            break;
+                        case 'taskbar':
+                            console.log(winID)
+                            console.log($(this))
+                            break;
+                    }
+                } else {
+                    taskbar = $(this).parent().attr('id').split('_')
+                    $("#" + taskbar[0]).animate({
+                        width: ["toggle", "swing"],
+                        height: ["toggle", "swing"],
+                        opacity: "toggle"
+                    });
+                }
+            })
+
             $('.appcontainer').click(function() {
+                //setting the appwind active
                 windowapp.ActiveApp(this.id)
                 windowapp.active(activeapp.appid)
-                    //close button
-                var test = this.id
-                $('#' + test).find('#close').click(function() {
-                    windowapp.close(test)
-                    $('.taskbar').find('#' + test + '_bar').remove()
-                })
-
             })
-            $("#minimize, .taskbar#" + activeapp.taskbarid).click(function() {
-                console.log($(this))
-                $("#" + activeapp.appid).animate({
-                    width: ["toggle", "swing"],
-                    height: ["toggle", "swing"],
-                    opacity: "toggle"
 
-                });
-            });
         } else {
             $('div#' + activeapp.appid).click()
         }
@@ -111,20 +133,18 @@ var windowapp = {
 }
 
 $('li.applist').click(function() {
-    var appid = $(this).attr('id'),
-        appname = $('#' + appid).text(),
-        appcontent = edsapps[appid.split('_')[0]]
+        var appid = $(this).attr('id'),
+            appname = $('#' + appid).text(),
+            appcontent = edsapps[appid.split('_')[0]]
 
-    console.log(appid.split('_')[0], appname)
-    windowapp.open(appid.split('_')[0], appname, appcontent)
-})
-//WAG BURAHIN TEMPORARY LANG TO
+        console.log(appid.split('_')[0], appname)
+        windowapp.open(appid.split('_')[0], appname, appcontent)
+    })
+    //WAG BURAHIN TEMPORARY LANG TO
 $('#PERSONAL').click(function() {
     appcontent = edsapps['PERSONAL1']
-    windowapp.open('PERSONA', 'Personal Information',appcontent)
-    $.post('posts',(data)=>{
+    windowapp.open('PERSONA', 'Personal Information', appcontent)
+    $.post('posts', (data) => {
         console.log(data)
     })
 })
-
-
