@@ -42,12 +42,13 @@ var windowapp = {
             });
 
             var minimize = activeapp.appid + '_min'
-            $('.exit,.taskbar-name-default,#' + minimize).click(function() {
+            $('.exit,.taskbar-name-defaults,#' + minimize + ',#' + activeapp.taskbarid).click(function() {
                 console.log($(this))
                 var dialogID = $(this).attr('class').split(' '),
                     winID = '',
                     taskbar = '';
-                if (dialogID[0] != 'taskbar-name-default') {
+                //verify if taskbar
+                if (dialogID[0] != 'appbarInfo') {
                     winID = $(this).attr('id').split('_')
                     switch (dialogID[1]) {
                         case 'minimize':
@@ -62,13 +63,10 @@ var windowapp = {
                             windowapp.close(winID[0])
                             $('.taskbar').find('#' + winID[0] + '_bar').remove()
                             break;
-                        case 'taskbar':
-                            console.log(winID)
-                            console.log($(this))
-                            break;
                     }
                 } else {
-                    taskbar = $(this).parent().attr('id').split('_')
+                    // taskbar = $(this).parent().attr('id').split('_')
+                    taskbar = $(this).attr('id').split('_')
                     $("#" + taskbar[0]).animate({
                         width: ["toggle", "swing"],
                         height: ["toggle", "swing"],
