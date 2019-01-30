@@ -83,6 +83,17 @@ var windowapp = {
 
         } else {
             $('div#' + activeapp.appid).click()
+            var a = $('#' + activeapp.appid).attr('style')
+                // check for appwindow is minimized
+            if (a == 'display: none;') {
+                console.log(a)
+                console.log(activeapp.appid)
+                $("#" + activeapp.appid).animate({
+                    width: ["toggle", "swing"],
+                    height: ["toggle", "swing"],
+                    opacity: "toggle"
+                });
+            }
         }
 
     },

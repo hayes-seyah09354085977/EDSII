@@ -1,8 +1,8 @@
 var edsapps = {
-    PERSONAL1:``,
+    PERSONAL1: ``,
 
     PROBOOK: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -99,7 +99,7 @@ var edsapps = {
         
     </div>
     
-    <div class="column">
+    <div class="column2">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -153,7 +153,7 @@ var edsapps = {
     </div> `,
 
     PRODUCTDATABASE: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -250,7 +250,7 @@ var edsapps = {
         
     </div>
     
-    <div class="column">
+    <div class="column2">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -274,7 +274,7 @@ var edsapps = {
     </div>`,
 
     IMPORTERDATABASE: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -361,7 +361,7 @@ var edsapps = {
     </div>`,
 
     SUPPLIERDATABASE: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -408,7 +408,7 @@ var edsapps = {
     </div>`,
 
     USDEXCHANGERATE: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -465,7 +465,7 @@ var edsapps = {
     </div>`,
 
     ATTACHMENTDOCUMENTCODE: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">
@@ -492,7 +492,7 @@ var edsapps = {
     </div>`,
 
     TARIFFRATES: `
-    <div class="column">
+    <div class="column1">
         <div class="row top-buffer">
             <div class="frm ">
                 <div class="form-group">

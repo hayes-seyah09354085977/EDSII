@@ -36,6 +36,21 @@
     width: 50%;
 }
 
+
+/*columns inside an app */
+
+.column1 {
+    position: absolute;
+    width: calc(100% - 262px);
+}
+
+.column2 {
+    position: absolute;
+    width: calc(100% - 262px);
+    top: 10px;
+    left: 50%;
+}
+
 .left {
     width: 10%;
 }
@@ -99,6 +114,11 @@ label {
 
 .content {
     padding: 10px;
+    /* adjusting the format per appbar */
+    width: calc(100% - 0px);
+    height: calc(100% - 40px);
+    position: absolute;
+    overflow: overlay;
 }
 
 .window {
@@ -155,14 +175,19 @@ label.taskbar-name-default {
     color: #667 !important;
 }
 
+
 /*field css*/
 
 input.primary {
     width: 120px;
 }
+
 span.lookup {
     font-size: 20px;
     margin-left: -19px;
     margin-top: 3px;
 }
-.top-buffer { margin-top:4px; }
+
+.top-buffer {
+    margin-top: 4px;
+}
